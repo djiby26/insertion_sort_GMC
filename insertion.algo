@@ -1,0 +1,16 @@
+ALGORITHM INSERTION_SORT_ALGO
+VAR
+    my_array : ARRAY_OF INTEGER[];
+BEGIN
+    INTEGER j, temp;
+    FOR INTEGER i FROM 1 TO unsorted_array.length STEP 1  DO
+        j = i;
+        WHILE (j > 0 and my_array[j] < my_array[j-1]) DO
+            temp :=  my_array[j];
+            my_array[j] := my_array[j-1];
+            my_array[j-1] := temp;
+            j := j - 1;
+        END_WHILE
+       
+    END_FOR
+END
